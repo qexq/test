@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        *{margin: 0;padding: 0;}
+
+        .약::after{content: ""; clear: both;display: block;}
+
+        .전체영역{width: 1000px;background-color: skyblue;
+        margin: 0 auto; padding: 20px;box-sizing:border-box ;}
+
+        .첫째집{width: 100%;background-color: peru;
+        /*margin-bottom: 30px;*/
+        margin: /*윗쪽 오른쪽 아랫쪽 왼쪽*/ /*0 0 30px 0;*/
+         /*위쪽 양쪽 아랫쪽*/ 0 0 30px; /*상하좌우;*/ /*상하 좌우;*/
+    }
+        .첫째집 .자식{width: 15%; height: 100px;
+             background-color: blueviolet; float: left; margin: 0 5%; padding: 10px; box-sizing: border-box; text-align: center; color: aliceblue;
+            }
+
+            .둘째집{background-color: aquamarine;width: 100%;
+                /*margin: 40px 0 0;*/
+                margin-top: 40px;
+                
+            
+            }
+            .둘째집 .자식{height: 100px;background-color: blueviolet; width: 23.3333%;float: left;margin: 0 5%;padding: 10px;box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <div class="전체영역">
+        <div class="첫째집 약">
+            <div class="자식">첫째집자식1</div>
+            <div class="자식">첫째집자식2</div>
+            <div class="자식">첫째집자식3</div>
+            <div class="자식">첫째집자식4</div>
+        </div>
+        <div class="둘째집 약">
+            <div class="자식">둘째집자식1</div>
+            <div class="자식">둘째집자식2</div>
+            <div class="자식">둘째집자식3</div>
+    </div>
+    </div>
+    
+    
+    
+</body>
+</html>
